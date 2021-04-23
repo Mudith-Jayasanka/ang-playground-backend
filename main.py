@@ -11,5 +11,5 @@ class Main:
 
 
     def getMessages(self):
-        return [self.messages,self.msgUsers]
+        return self.messages
 
