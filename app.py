@@ -32,5 +32,10 @@ def sendMessage():
 def getMessages():
     return jsonify(main.getMessages())
 
+@app.route("/deleteMsgs" , methods=["GET"])
+def deleteMessages():
+    main.deleteAll()
+    return jsonify(main.getMessages())
+
 if __name__ == '__main__':
     app.run()

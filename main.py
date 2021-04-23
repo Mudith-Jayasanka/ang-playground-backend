@@ -13,3 +13,6 @@ class Main:
     def getMessages(self):
         return self.messages
 
+    def deleteAll(self):
+        self.messages = []
+        self.msgUsers = []
