@@ -1,12 +1,12 @@
 from flask import Flask, jsonify , request
 from flask_cors import CORS
 import random
-import main as m
+from main import Main
 
 app = Flask(__name__)
 CORS(app)
 
-main = m()
+main = Main()
 
 @app.route('/')
 def hello_world():
