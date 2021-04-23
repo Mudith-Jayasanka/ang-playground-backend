@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return jsonify('Hello World!')
 
 
 @app.route('/random' , methods=["GET"])
